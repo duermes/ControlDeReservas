@@ -1,12 +1,17 @@
 package views;
 
 import java.awt.EventQueue;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextField;
 import java.awt.Color;
 import com.toedter.calendar.JDateChooser;
+import database.dao.HuespedesDao;
+
 import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JLabel;
@@ -253,6 +258,12 @@ public class RegistroHuesped extends JFrame {
 		btnguardar.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
+				EntityManagerFactory factory = Persistence.createEntityManagerFactory("sistema_de_reservas");
+				EntityManager em = factory.createEntityManager();
+				HuespedesDao huespedDao= new HuespedesDao(em);
+				em.getTransaction().begin();
+
+
 			}
 		});
 		btnguardar.setLayout(null);

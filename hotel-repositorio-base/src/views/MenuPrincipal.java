@@ -18,7 +18,6 @@ import java.awt.event.MouseMotionAdapter;
 
 @SuppressWarnings("serial")
 public class MenuPrincipal extends JFrame {
-
 	private JPanel contentPane;
 	private JLabel labelExit;
 	int xMouse, yMouse;

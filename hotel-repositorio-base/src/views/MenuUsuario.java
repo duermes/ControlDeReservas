@@ -222,12 +222,12 @@ public class MenuUsuario extends JFrame {
 	    labelDescripcion_1.setBounds(311, 345, 569, 88);
 	    contentPane.add(labelDescripcion_1);
 	    
-	    JLabel lblNewLabel_3 = new JLabel("- Registro de Reservas y Huéspedes");
+	    JLabel lblNewLabel_3 = new JLabel("- Registro de Reserva y Huéspedes");
 	    lblNewLabel_3.setFont(new Font("Roboto", Font.PLAIN, 17));
 	    lblNewLabel_3.setBounds(312, 444, 295, 27);
 	    contentPane.add(lblNewLabel_3);
 	    
-	    JLabel lblNewLabel_3_1 = new JLabel("- Edición de Reservas y Huéspedes existentes");
+	    JLabel lblNewLabel_3_1 = new JLabel("- Edición de Reserva y Huéspedes existentes");
 	    lblNewLabel_3_1.setFont(new Font("Roboto", Font.PLAIN, 17));
 	    lblNewLabel_3_1.setBounds(312, 482, 355, 27);
 	    contentPane.add(lblNewLabel_3_1);
